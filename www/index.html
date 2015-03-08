@@ -98,7 +98,7 @@
 
               var base64 = "V29ya2luZyBhdCBQYXJzZSBpcyBncmVhdCE=";
 
-              var file = new Parse.File(src, src, 'audio/mp3');
+              var file = new Parse.File("src.mp3", { base64: base64 } );
 
               file.save().then(function() {
                 $('#message').append(' file saved ');// The file has been saved to Parse.
